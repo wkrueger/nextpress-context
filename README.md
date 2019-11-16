@@ -49,6 +49,7 @@ const ctx = ContextFactory({
 console.log(ctx.jwt.secret)
 ```
 
+- `ctx` will hold the keys you had declared.
 - Requires `JWT_SECRET` to be either in the environment variables or in `envfile.env` file;
 - Unless `NO_ENVFILE` environment variable is set, throws
   if `envfile.env` does not exist. Also, creates a new preset `envfile.env` according to the required variables
