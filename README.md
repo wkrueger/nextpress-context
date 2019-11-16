@@ -1,5 +1,11 @@
 # nextpress-context
 
+**npm package**
+
+```
+yarn add @proerd/nextpress-context
+```
+
 **What this does**
 
   - Merges environment variables from an `envfile.env` and the environment;
