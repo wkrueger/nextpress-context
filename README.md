@@ -1,5 +1,13 @@
 # nextpress-context
 
+**What this does**
+
+  - Merges environment variables from an `envfile.env` and the environment;
+  - Specify required environment variables. Throws on not found;
+  - Allow alternate envfiles;
+  - Remap env keys to JS objects;
+  - Suggests a default way to integrate those keys to typescript;
+
 ## Declare a context mapper
 
 ```ts
@@ -27,6 +35,8 @@ declare global {
 }
 ```
 
+Type is available through `Nextpress.Context`.
+
 ## Declare the application context
 
 ```ts
@@ -43,7 +53,3 @@ console.log(ctx.jwt.secret)
 - Unless `NO_ENVFILE` environment variable is set, throws
   if `envfile.env` does not exist. Also, creates a new preset `envfile.env` according to the required variables
 - If `withPrefix` is set, requires variables from a different envfile, `<prefix>envfile.env`. Also requires uppercase prefix to be prepended to each environment variable.
-
-# TSDX Bootstrap
-
-This project was bootstrapped with [TSDX](https://github.com/jaredpalmer/tsdx).
