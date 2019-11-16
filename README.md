@@ -3,7 +3,7 @@
 **What this does**
 
   - Merges environment variables from an `envfile.env` and the environment;
-  - Specify required environment variables. Throws on not found;
+  - Specify required environment variables. Throws on not found. Creates scaffold envfile.
   - Allow alternate envfiles for multiple environments;
   - Remap env keys to JS objects;
   - Suggests a default way to integrate those keys to typescript;
